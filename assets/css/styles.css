@@ -2,55 +2,49 @@
 body {
   margin: 0;
   font-family: 'Dancing Script', cursive;
-  background-image: url("../images/texture.jpg");
+  background-image: url('../images/texture.jpg');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
+  background-attachment: fixed;
 }
 
-header {
-  background-color: #f6efe7;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f4eb;
+  padding: 10px 40px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0.5rem 2rem;
-  box-sizing: border-box;
 }
 
-.nav-container {
+.logo {
+  height: 80px;
+}
+
+.nav-links {
   display: flex;
+  gap: 40px;
   align-items: center;
-  justify-content: space-between;
+  margin-left: auto;
 }
 
-.logo img {
-  height: 60px;
-}
-
-nav ul {
+.nav-links li {
   list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-nav ul li {
   text-align: center;
 }
 
-nav ul li img {
-  height: 16px;
-  display: block;
-  margin: 0 auto 4px;
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #3a823e;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #3d732d;
-  font-size: 20px;
+.nav-flower {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 4px auto;
 }
