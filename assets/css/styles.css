@@ -1,50 +1,49 @@
-
 body {
   margin: 0;
   font-family: 'Dancing Script', cursive;
-  background-image: url('../images/texture.jpg');
+  background: url("../images/texture.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-nav {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f9f4eb;
-  padding: 10px 40px;
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 240, 0.8);
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
   z-index: 1000;
 }
 
 .logo {
-  height: 80px;
+  height: 90px;
+  margin-right: 20px;
 }
 
-.nav-links {
+.navbar ul {
   display: flex;
-  gap: 40px;
-  align-items: center;
-  margin-left: auto;
-}
-
-.nav-links li {
+  gap: 30px;
   list-style: none;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.navbar li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar a {
   text-decoration: none;
-  font-size: 1.7em;
-  color: #3a823e;
+  font-size: 22px;
+  color: #2e7031;
 }
 
-.nav-flower {
-  display: block;
+.flower {
   width: 20px;
-  height: 20px;
-  margin: 0 auto 4px auto;
+  height: auto;
+  margin-bottom: 2px;
 }
