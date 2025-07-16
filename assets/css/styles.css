@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: url('../images/texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #f5f1e9;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  text-align: center;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3a7728;
+  font-size: 1.3em;
+}
+
+.nav-icon {
+  height: 20px;
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
